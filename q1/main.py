@@ -1,6 +1,8 @@
+from contar_palavra import contador_palavra
+
 # Questão 1 - Manipulação de listas e strings
 
-frase = input("Digite uma frase: ")
+'''frase = input("Digite uma frase: ")
 palavra = input("Digite uma palavra para buscar: ")
 
 frase_minuscula = frase.lower()
@@ -12,4 +14,6 @@ for p in palavras_frase:
         quantidade += 1
 
 # Quantidade de Palavras
-print(quantidade)
+print(quantidade)'''
+
+print(contador_palavra("TESTE teste TeStE alo ALO", "TESTE"))
