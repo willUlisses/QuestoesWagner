@@ -31,4 +31,5 @@ def main():
         print("Nenhuma nota foi informada.")
 
 
+
 main()
