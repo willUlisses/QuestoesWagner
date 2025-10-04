@@ -2,11 +2,20 @@
 # Crie a função que converte reais para dólares e dólares para reais (arquivo conversor.py)
 # real_para_dolar e dolar_para_real. Caso o usuário não passe o tipo (real_para_dolar ou dolar_para_real) o default deve ser real_para_dolar <- padrão
 
-valor = float(input("Digite o valor: "))
-cotacao = float(input("Digite a cotação do dólar: "))
+from conversor import *
 
-real_para_dolar = valor / cotacao
-dolar_para_real = valor * cotacao
+print("Conversor entre dólares e reais\n")
 
-print(f"\n{valor:.2f} reais equivalem a {real_para_dolar:.2f} dólares.")
-print(f"{valor:.2f} dólares equivalem a {dolar_para_real:.2f} reais.")
+tipo = int(input("Agora informe o tipo de conversão\n[1] - Real -> Dolar \n[2] - Dolar -> Real\n"))
+
+match tipo:
+    case 1:
+        real_para_dolar() 
+    case 2:
+        dolar_para_real() 
+    case _:
+        real_para_dolar()        
+
+
+
+
